@@ -11,7 +11,7 @@ Rails.application.routes.draw do
     get "/actors" => "actors#index"
 
     get "/movies" => "movies#index"
-  
+    
     get "/actors/:id" => "actors#show"
 
     get "/movies/:id" => "movies#show"

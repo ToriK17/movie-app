@@ -1,5 +1,6 @@
 {
-  title: @title,
-  year: @year, 
-  plot: @plot
+  title: @movie.title,
+  year: @movie.year, 
+  plot: @movie.plot 
+
 }
