@@ -7,25 +7,29 @@ Rails.application.routes.draw do
   #   get "/photos" => "photos#index"
   # end
   namespace :api do
-    get "/single_actor_url/:id" => "actors#single_actor"
+    
+    get "/actors" => "actors#index"
 
     get "/movies" => "movies#index"
   
+    get "/actors/:id" => "actors#show"
+
     get "/movies/:id" => "movies#show"
     
-    get "/actors/" => "actors#show"
-    # query parameter
-    # http://localhost:3000/api/actors?first_name=Jack   
+    post "/actors" => "actors#create"
 
-    get "/actors/:id" => "actors#single_actor"
-    # url segment parameter
-    # http://localhost:3000/api/actors/9
+    post "/movies" => "movies#create"
 
-    get "/actors_body_param/" => "actors#body_params"
-    # body param query
-    # http://localhost:3000/api/actors_body_param/
-    # first_name Joe
+    patch "/actors/:id" => "actors#update"
 
-  end   
+    patch "/movies/:id" => "movies#update"
+
+    delete "/actors/:id" => "actors#update"
+
+    delete "/movies/:id" => "movies#create"
+
+    # get "/actors_body_param/" => "actors#body_params"
+
+  end  
 end
 

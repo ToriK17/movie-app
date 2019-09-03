@@ -1,18 +1,20 @@
 class Api::ActorsController < ApplicationController
-  def single_actor
-    @single_actor = Actor.find_by(id: params[:id])
-    render 'single_actor.json.jb'
+
+  def index
+    @actors = Actor.all 
+    render 'index.json.jb'
   end
 
   def show
-    actor = params[:first_name]
-    @message = "Yes, #{actor} is an actor."
+    @actor = Actor.find_by(id: params[:id])
     render 'show.json.jb'
   end
 
-  def body_params
-    @message = Actor.find_by(params[:first_name])
-    render 'body_params.json.jb'
-  end
-  
+
+
+  # def body_params
+  #   @message = Actor.find_by(params[:first_name])
+  #   render 'body_params.json.jb'
+  # end
+
 end

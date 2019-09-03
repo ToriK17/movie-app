@@ -1,3 +1,5 @@
 {
-id: @movie.id
+  title: @title,
+  year: @year, 
+  plot: @plot
 }
