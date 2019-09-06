@@ -30,6 +30,6 @@ Rails.application.routes.draw do
 
     # get "/actors_body_param/" => "actors#body_params"
 
-  end  
+  end 
 end
 
