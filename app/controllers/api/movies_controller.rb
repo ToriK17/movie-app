@@ -2,6 +2,10 @@ class Api::MoviesController < ApplicationController
  
   def index
     @movies = Movie.all
+
+    if params[:english]
+      @movies = Movie.where("english=?", true)
+    end   
     render "index.json.jb"
   end
 
@@ -28,7 +32,7 @@ class Api::MoviesController < ApplicationController
     @movie.year = params[:year] || @movie.year
     @movie.plot = params[:plot] || @movie.plot
     @movie.director = params[:director] || @movie.director
-    @movie.english = params [:english] || movie.english
+    @movie.english = params[:english] || @movie.english
     @movie.save
     render "show.json.jb"
   end
