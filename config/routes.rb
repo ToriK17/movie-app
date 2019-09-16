@@ -28,6 +28,10 @@ Rails.application.routes.draw do
 
     delete "/movies/:id" => "movies#create"
 
+    post "/users" => "users#create"
+
+    post "/sessions" => "sessions#create"
+
     # get "/actors_body_param/" => "actors#body_params"
 
   end 
