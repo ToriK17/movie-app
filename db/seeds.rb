@@ -17,11 +17,21 @@
 # actor = Actor.new({first_name: "Samuel", last_name: "Jackson", known_for: "Pulp Fiction"})
 # actor.save 
 
-movie = Movie.new({title: "Pulp Fiction", year: 1994, plot: "mob guys, a boxer and diner bandits"})
-movie.save
+# movie = Movie.new({title: "Pulp Fiction", year: 1994, plot: "mob guys, a boxer and diner bandits"})
+# movie.save
 
-movie = Movie.new({title: "Rocky", year: 1976, plot: "That italian stallion"})
-movie.save
+# movie = Movie.new({title: "Rocky", year: 1976, plot: "That italian stallion"})
+# movie.save
 
-movie = Movie.new({title: "The terminator", year: 1984, plot: "The scary year of 2029"})
-movie.save
+# movie = Movie.new({title: "The terminator", year: 1984, plot: "The scary year of 2029"})
+# movie.save
+
+# Genre.create([
+# {name: "comedy"}, 
+# {name:"drama"}])
+
+# MovieGenre.create([
+# {genre_id:1, movie_id:7},
+# {genre_id:2, movie_id:5},
+# {genre_id:1, movie_id:1}
+# ])
