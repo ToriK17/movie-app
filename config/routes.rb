@@ -32,6 +32,10 @@ Rails.application.routes.draw do
 
     post "/sessions" => "sessions#create"
 
+    post "/moviegenres" => "movie_genres#create"
+    
+
+
     # get "/actors_body_param/" => "actors#body_params"
 
   end 
