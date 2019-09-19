@@ -4,5 +4,5 @@
   plot: @movie.plot, 
   director: @movie.director, 
   english: @movie.english, 
-  genres: movie.genres
+  genres: @movie.genres
 }
