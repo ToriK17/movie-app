@@ -1,5 +1,5 @@
 class Api::ActorsController < ApplicationController
-  before_action :authenticate_admin, except: [:index, :show]
+  # before_action :authenticate_admin, except: [:index, :show, :destroy]
 
   def index
     @actors = Actor.all
@@ -49,9 +49,6 @@ class Api::ActorsController < ApplicationController
 
 
 
-  # def body_params
-  #   @message = Actor.find_by(params[:first_name])
-  #   render 'body_params.json.jb'
-  # end
+ 
 
 end
